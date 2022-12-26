@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-native-maps/ios/AirGoogleMaps/AIRGoogleMapManager.m b/node_modules/react-native-maps/ios/AirGoogleMaps/AIRGoogleMapManager.m
+index 23121c5..8365705 100644
+--- a/node_modules/react-native-maps/ios/AirGoogleMaps/AIRGoogleMapManager.m
++++ b/node_modules/react-native-maps/ios/AirGoogleMaps/AIRGoogleMapManager.m
+@@ -45,7 +45,7 @@ RCT_EXPORT_MODULE()
+ 
+ - (UIView *)view
+ {
+-  [GMSServices setMetalRendererEnabled:YES];
++  [GMSServices setMetalRendererEnabled:NO];
+   
+   AIRGoogleMap *map = [AIRGoogleMap new];
+   map.bridge = self.bridge;
